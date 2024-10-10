@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../images/ethereum-brands-solid.svg"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="../css/globlecss.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/pages/cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Cart</title>
+  </head>
+  <body
+    style="
+      height: 100vh;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      align-items: center;
+    "
+  >
+    <header class="flex">
+      <a href="/" class="logo">
+        <i class="fa-brands fa-ethereum"></i>
+        <span style="font-weight: bold">Diamond</span>
+        <p style="letter-spacing: 4px">Shopping</p>
+      </a>
+      <div class="links">
+        <a
+          style="position: relative; border: 1px solid var(--white)"
+          class="cart"
+          href="#"
+        >
+          <i class="fa-solid fa-cart-arrow-down"></i>
+          $0.00
+          <span class="products-number">5</span>
+        </a>
+        <a class="sign-in" href="./signin.html">
+          <i class="fa-solid fa-arrow-right-to-bracket"></i>
+          Sign in
+        </a>
+        <a class="register" href="./register.html">
+          <i class="fa-solid fa-user-plus"></i>
+          Register
+        </a>
+      </div>
+    </header>
+
+    <main style="text-align: center">
+      <section class="cart">
+        <article class="product flex">
+          <button class="fa-solid fa-trash-can"></button>
+          <p class="price">$100</p>
+          <div class="flex" style="margin-right: 1rem">
+            <button class="decrease">-</button>
+            <div class="quantity flex">2</div>
+            <button class="increase">+</button>
+          </div>
+          <p class="title">Product Title</p>
+          <img
+            src="../images/1.png"
+            alt=""
+            style="width: 70px; height: 70px; border-radius: 0.22rem"
+          />
+        </article>
+
+        <article class="product flex">
+          <button class="fa-solid fa-trash-can"></button>
+          <p class="price">$100</p>
+          <div class="flex" style="margin-right: 1rem">
+            <button class="decrease">-</button>
+            <div class="quantity flex">2</div>
+            <button class="increase">+</button>
+          </div>
+          <p class="title">Product Title</p>
+          <img
+            src="../images/2.webp"
+            alt=""
+            style="width: 70px; height: 70px; border-radius: 0.22rem"
+          />
+        </article>
+
+        <article class="product flex">
+          <button class="fa-solid fa-trash-can"></button>
+          <p class="price">$100</p>
+          <div class="flex" style="margin-right: 1rem">
+            <button class="decrease">-</button>
+            <div class="quantity flex">2</div>
+            <button class="increase">+</button>
+          </div>
+          <p class="title">Product Title</p>
+          <img
+            src="../images/3.webp"
+            alt=""
+            style="width: 70px; height: 70px; border-radius: 0.22rem"
+          />
+        </article>
+      </section>
+
+      <button class="clear">
+        <i
+          class="fa-solid fa-trash-can icon"
+          style="color: #fff; margin-right: 0.2rem"
+        ></i>
+        Clear Cart
+      </button>
+
+      <section class="summary">
+        <h1>Summary</h1>
+        <div class="flex">
+          <p class="subtotal">Subtotal</p>
+          <p>$300</p>
+        </div>
+        <button disabled class="checkout">CHECKOUT</button>
+        <a href="signin.html">Please Sign in to continue</a>
+      </section>
+    </main>
+
+    <footer>Developed by <span>Youssef Yakoub</span></footer>
+  </body>
+</html>

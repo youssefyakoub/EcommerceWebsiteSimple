@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../images/ethereum-brands-solid.svg"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="../css/globlecss.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/pages/regester.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Cart</title>
+  </head>
+  <body
+    style="
+      height: 100vh;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      align-items: center;
+    "
+  >
+    <header class="flex">
+      <a href="/" class="logo">
+        <i class="fa-brands fa-ethereum"></i>
+        <span style="font-weight: bold">Diamond</span>
+        <p style="letter-spacing: 4px">Shopping</p>
+      </a>
+      <div class="links">
+        <a style="position: relative" class="cart" href="./cart.html">
+          <i class="fa-solid fa-cart-arrow-down"></i>
+          $0.00
+          <span class="products-number">5</span>
+        </a>
+        <a class="sign-in" href="./signin.html">
+          <i class="fa-solid fa-arrow-right-to-bracket"></i>
+          Sign in
+        </a>
+        <a style="border: 1px solid var(--white)" class="register" href="#">
+          <i class="fa-solid fa-user-plus"></i>
+          Register
+        </a>
+      </div>
+    </header>
+
+    <div class="main1">
+      <form class="main-form">
+        <div class="userifo">
+          <label class="l1" for="username">Username</label><br />
+          <input id="username" type="text" /><br />
+          <label class="l1" for="email">Email Address</label><br />
+          <input id="email" type="email" /><br />
+          <label class="l1" for="password">Password</label><br />
+          <input id="password" type="password" /><br />
+        </div>
+        <form class="checkbox">
+          <br />
+          <input type="checkbox" />
+          <label>Check me out</label><br />
+          <input class="button" type="submit" value="Create Account" />
+        </form>
+      </form>
+    </div>
+
+    <footer>Developed by <span>Youssef Yakoub</span></footer>
+  </body>
+</html>
